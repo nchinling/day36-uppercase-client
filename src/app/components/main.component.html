@@ -1,0 +1,6 @@
+<h1>Enter a phrase</h1>
+
+<form [formGroup]="form" (submit)="process()">
+    <input type="text" size = 30 formControlName="text">&nbsp;
+    <button type="submit" [disabled]="form.invalid">To Uppercase</button>
+</form>
